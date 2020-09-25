@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bs12-gas-records", "bs12-gas-records.csproj", "{D9606A96-EE68-45BB-9A64-742D20968500}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9606A96-EE68-45BB-9A64-742D20968500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9606A96-EE68-45BB-9A64-742D20968500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9606A96-EE68-45BB-9A64-742D20968500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9606A96-EE68-45BB-9A64-742D20968500}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B08CDE1-949E-4AE2-9B3B-B0C43ECB07EF}
+	EndGlobalSection
+EndGlobal

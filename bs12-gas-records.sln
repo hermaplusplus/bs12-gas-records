@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bs12-gas-records", "bs12-gas-records.csproj", "{D9606A96-EE68-45BB-9A64-742D20968500}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5B5C31E-AE9F-4729-A1A3-89365B283267}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		readme.md = readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

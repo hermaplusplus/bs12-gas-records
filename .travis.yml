@@ -1,0 +1,4 @@
+language: csharp
+solution: Maze.sln
+mono:
+  - latest

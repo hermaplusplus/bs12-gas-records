@@ -13,7 +13,7 @@ namespace bs12_gas_records
 {
     public partial class Form1 : System.Windows.Forms.Form
     {
-        string recPublic, recMedical, recEmployment, recSecurity, recCourses;
+        string recPublic, recMedical, recEmployment, recSecurity, recCourses, recTemperament;
         bool[] completed = new bool[7] { false, false, false, false, false, false, false };
 
         private void txtName_TextChanged(object sender, EventArgs e)
@@ -75,6 +75,11 @@ namespace bs12_gas_records
                 listCourses.Items.RemoveAt(listCourses.SelectedIndex);
             if (listCourses.Items.Count == 0)
                 UpdateProgressBar(6, false);
+        }
+
+        private void btnCode_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/hermaplusplus/bs12-gas-records");
         }
 
         private void btnRemoveAll_Click(object sender, EventArgs e)

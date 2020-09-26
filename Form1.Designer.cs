@@ -188,6 +188,7 @@
             this.btnCode.TabIndex = 2;
             this.btnCode.Text = "View code on GitHub";
             this.btnCode.UseVisualStyleBackColor = true;
+            this.btnCode.Click += new System.EventHandler(this.btnCode_Click);
             // 
             // label2
             // 

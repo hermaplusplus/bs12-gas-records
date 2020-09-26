@@ -22,9 +22,9 @@ namespace bs12_gas_records
         {
             Random rng = new Random();
             if (rng.Next(0, 10) == rng.Next(0,10))
-                this.Icon = new Icon("cabbage.ico");
+                this.Icon = new Icon("icons/cabbage.ico");
             else
-                this.Icon = new Icon("xynergy.ico");
+                this.Icon = new Icon("icons/xynergy.ico");
         }
     }
 }

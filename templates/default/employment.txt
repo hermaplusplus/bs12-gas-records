@@ -1,0 +1,8 @@
+﻿[center][h1]Xynergy GAS Subject Employment Record[/h1][/center]
+
+[b]Contracted To:[/b] SEV Torch
+[b]Contract Start Date:[/b] //DATE//
+[b]Contract End Date:[/b] N/A
+[b]Assigned Occupation:[/b] //OCCUPATION//
+
+Other employment records not applicable. GAS are trained and contracted by Xynergy.

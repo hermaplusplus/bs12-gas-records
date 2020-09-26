@@ -1,0 +1,17 @@
+﻿[center][h1]Xynergy GAS Subject Medical Record[/h1][/center]
+
+[b]Name:[/b] //NAME//
+[b]Sex:[/b] //SEX//
+[b]Age:[/b] //AGE//
+[b]Regular Height:[/b] //HEIGHT//
+[b]Coloration:[/b] //COLOURATION//
+
+[b]Post-Mortem Instructions[/b]
+Preserve cadaver until recovered by Xynergy.
+[b]Prosthetics and Implants:[/b]
+[list]
+[*] Vocal Synthesizer
+[/list]
+
+[b]Notes:[/b]
+GAS blood contains phoron. As such, no chemicals that mix with phoron should enter their bloodstream. In case of medical attention, explain your actions to the serpentid and avoid touching or getting too close.

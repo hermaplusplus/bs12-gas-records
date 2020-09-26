@@ -68,6 +68,10 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemoveSelected = new System.Windows.Forms.Button();
             this.btnRemoveAll = new System.Windows.Forms.Button();
+            this.txtNotes = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtColouration = new System.Windows.Forms.TextBox();
             this.tabOutputs.SuspendLayout();
             this.tabPagePublic.SuspendLayout();
             this.tabPageMedical.SuspendLayout();
@@ -289,7 +293,7 @@
             // 
             this.txtName.Location = new System.Drawing.Point(16, 174);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(193, 22);
+            this.txtName.Size = new System.Drawing.Size(121, 22);
             this.txtName.TabIndex = 12;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
@@ -300,7 +304,7 @@
             "Male",
             "Female",
             "Plural"});
-            this.comboSex.Location = new System.Drawing.Point(215, 174);
+            this.comboSex.Location = new System.Drawing.Point(147, 176);
             this.comboSex.Name = "comboSex";
             this.comboSex.Size = new System.Drawing.Size(121, 24);
             this.comboSex.TabIndex = 13;
@@ -309,7 +313,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(212, 153);
+            this.label6.Location = new System.Drawing.Point(144, 155);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 17);
             this.label6.TabIndex = 14;
@@ -317,9 +321,9 @@
             // 
             // txtHeight
             // 
-            this.txtHeight.Location = new System.Drawing.Point(343, 173);
+            this.txtHeight.Location = new System.Drawing.Point(275, 175);
             this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(119, 22);
+            this.txtHeight.Size = new System.Drawing.Size(81, 22);
             this.txtHeight.TabIndex = 15;
             this.txtHeight.Text = " ";
             this.txtHeight.TextChanged += new System.EventHandler(this.txtHeight_TextChanged);
@@ -327,7 +331,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(340, 153);
+            this.label7.Location = new System.Drawing.Point(272, 155);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 17);
             this.label7.TabIndex = 16;
@@ -346,7 +350,7 @@
             // 
             this.txtTrainingCentre.Location = new System.Drawing.Point(16, 224);
             this.txtTrainingCentre.Name = "txtTrainingCentre";
-            this.txtTrainingCentre.Size = new System.Drawing.Size(193, 22);
+            this.txtTrainingCentre.Size = new System.Drawing.Size(121, 22);
             this.txtTrainingCentre.TabIndex = 18;
             this.txtTrainingCentre.TextChanged += new System.EventHandler(this.txtTrainingCentre_TextChanged);
             // 
@@ -461,11 +465,48 @@
             this.btnRemoveAll.UseVisualStyleBackColor = true;
             this.btnRemoveAll.Click += new System.EventHandler(this.btnRemoveAll_Click);
             // 
+            // txtNotes
+            // 
+            this.txtNotes.Location = new System.Drawing.Point(147, 224);
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(315, 22);
+            this.txtNotes.TabIndex = 22;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(144, 203);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 17);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "General Notes";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(359, 155);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(80, 17);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "Colouration";
+            // 
+            // txtColouration
+            // 
+            this.txtColouration.Location = new System.Drawing.Point(362, 175);
+            this.txtColouration.Name = "txtColouration";
+            this.txtColouration.Size = new System.Drawing.Size(100, 22);
+            this.txtColouration.TabIndex = 23;
+            this.txtColouration.Text = " ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 553);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.txtColouration);
+            this.Controls.Add(this.txtNotes);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtTrainingCentre);
@@ -545,6 +586,10 @@
         private System.Windows.Forms.TextBox txtCourseCode;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnRemoveAll;
+        private System.Windows.Forms.TextBox txtNotes;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtColouration;
     }
 }
 

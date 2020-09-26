@@ -1,0 +1,11 @@
+﻿[center][h1]Xynergy GAS Subject Security Record[/h1][/center]
+
+[b]Name:[/b] //NAME//
+[b]Sex:[/b] //SEX//
+[b]Age:[/b] //AGE//
+[b]Regular Height:[/b] //HEIGHT//
+[b]Coloration:[/b] //COLOURATION//
+
+[b]Temperament Grade:[/b] Positive
+[b]Temperament Grade Meaning:[/b]
+//TEMPERAMENT//

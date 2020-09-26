@@ -134,6 +134,7 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(7, 7);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(495, 513);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
@@ -142,6 +143,7 @@
             // 
             this.txtMedical.Location = new System.Drawing.Point(7, 7);
             this.txtMedical.Name = "txtMedical";
+            this.txtMedical.ReadOnly = true;
             this.txtMedical.Size = new System.Drawing.Size(495, 513);
             this.txtMedical.TabIndex = 1;
             this.txtMedical.Text = "";
@@ -150,6 +152,7 @@
             // 
             this.txtEmployment.Location = new System.Drawing.Point(7, 7);
             this.txtEmployment.Name = "txtEmployment";
+            this.txtEmployment.ReadOnly = true;
             this.txtEmployment.Size = new System.Drawing.Size(495, 513);
             this.txtEmployment.TabIndex = 1;
             this.txtEmployment.Text = "";
@@ -158,6 +161,7 @@
             // 
             this.txtSecurity.Location = new System.Drawing.Point(7, 7);
             this.txtSecurity.Name = "txtSecurity";
+            this.txtSecurity.ReadOnly = true;
             this.txtSecurity.Size = new System.Drawing.Size(495, 513);
             this.txtSecurity.TabIndex = 1;
             this.txtSecurity.Text = "";

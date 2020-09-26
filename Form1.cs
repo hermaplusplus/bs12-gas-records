@@ -52,16 +52,16 @@ namespace bs12_gas_records
                 if (checkPassed.Checked == true)
                 {
                     if (txtCourseCode.Text.Trim() != "")
-                        listCourses.Items.Add(txtCourseCode.Text + " " + txtCourseName + ", [i]passed[/i]");
+                        listCourses.Items.Add(txtCourseCode.Text + " " + txtCourseName.Text + ", [i]passed[/i]");
                     else
-                        listCourses.Items.Add(txtCourseName + ", [i]passed[/i]");
+                        listCourses.Items.Add(txtCourseName.Text + ", [i]passed[/i]");
                 }
                 else
                 {
                     if (txtCourseCode.Text.Trim() != "")
-                        listCourses.Items.Add(txtCourseCode.Text + " " + txtCourseName + ", [i]failed[/i]");
+                        listCourses.Items.Add(txtCourseCode.Text + " " + txtCourseName.Text + ", [i]failed[/i]");
                     else
-                        listCourses.Items.Add(txtCourseName + ", [i]failed[/i]");
+                        listCourses.Items.Add(txtCourseName.Text + ", [i]failed[/i]");
                 }
                 UpdateProgressBar(6, true);
             }

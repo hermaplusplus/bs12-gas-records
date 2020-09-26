@@ -206,7 +206,7 @@
             this.txtTemplatePath.Name = "txtTemplatePath";
             this.txtTemplatePath.Size = new System.Drawing.Size(230, 23);
             this.txtTemplatePath.TabIndex = 5;
-            this.txtTemplatePath.Text = "templates/default.zip";
+            this.txtTemplatePath.Text = "templates/default/";
             // 
             // progressBar1
             // 
@@ -469,10 +469,10 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.txtTemplatePath);
             this.Controls.Add(this.btnTemplateUpdate);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCode);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabOutputs);
+            this.Controls.Add(this.label2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Giant Armoured Serpentid Record Utility";

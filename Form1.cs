@@ -13,6 +13,8 @@ namespace bs12_gas_records
 {
     public partial class Form1 : System.Windows.Forms.Form
     {
+        string recPublic, recMedical, recEmployment, recSecurity;
+
         public Form1()
         {
             InitializeComponent();

@@ -20,7 +20,11 @@ namespace bs12_gas_records
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Icon = new Icon("xynergy.ico");
+            Random rng = new Random();
+            if (rng.Next(0, 10) == rng.Next(0,10))
+                this.Icon = new Icon("icons/cabbage.ico");
+            else
+                this.Icon = new Icon("icons/xynergy.ico");
         }
     }
 }

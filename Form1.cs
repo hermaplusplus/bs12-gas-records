@@ -16,6 +16,40 @@ namespace bs12_gas_records
         string recPublic, recMedical, recEmployment, recSecurity, recCourses;
         bool[] completed = new bool[7] { false, false, false, false, false, false, false };
 
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            if (txtName.Text.Trim() != "")
+                UpdateProgressBar(2, true);
+            else
+                UpdateProgressBar(2, false);
+        }
+
+        private void comboSex_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateProgressBar(3, true);
+        }
+
+        private void txtHeight_TextChanged(object sender, EventArgs e)
+        {
+            if (txtHeight.Text.Trim() != "")
+                UpdateProgressBar(4, true);
+            else
+                UpdateProgressBar(4, false);
+        }
+
+        private void txtTrainingCentre_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTrainingCentre.Text.Trim() != "")
+                UpdateProgressBar(5, true);
+            else
+                UpdateProgressBar(5, false);
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         private void comboGrade_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboGrade.SelectedIndex >= 0 && comboGrade.SelectedIndex <= 2)
@@ -26,6 +60,7 @@ namespace bs12_gas_records
                 comboOccupation.Items.Add("Chemist");
                 comboOccupation.Items.Add("Paramedic/EMT");
                 comboOccupation.SelectedIndex = 0;
+                UpdateProgressBar(1, true);
             }
             else if (comboGrade.SelectedIndex >= 3 && comboGrade.SelectedIndex <= 5)
             {
@@ -34,15 +69,18 @@ namespace bs12_gas_records
                 comboOccupation.Items.Add("Bartender");
                 comboOccupation.Items.Add("Deck Technician");
                 comboOccupation.SelectedIndex = 0;
+                UpdateProgressBar(1, true);
             }
             else if (comboGrade.SelectedIndex >= 6 && comboGrade.SelectedIndex <= 8)
             {
                 comboOccupation.Items.Clear();
                 comboOccupation.Items.Add("Janitor");
                 comboOccupation.SelectedIndex = 0;
+                UpdateProgressBar(1, true);
             }
             else
                 comboOccupation.Items.Clear();
+            UpdateProgressBar(0, true);
         }
 
         public Form1()
@@ -57,6 +95,18 @@ namespace bs12_gas_records
                 this.Icon = new Icon("icons/cabbage.ico");
             else
                 this.Icon = new Icon("icons/xynergy.ico");
+        }
+
+        private void UpdateProgressBar(int index, bool filled)
+        {
+            completed[index] = filled;
+            int count = 0;
+            for (int p = 0; p < 7; p++)
+            {
+                if (completed[p])
+                    count++;
+            }
+            barProgress.Value = count * 10;
         }
     }
 }

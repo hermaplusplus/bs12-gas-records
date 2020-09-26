@@ -47,7 +47,41 @@ namespace bs12_gas_records
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+            if (txtCourseName.Text.Trim() != "")
+            {
+                if (checkPassed.Checked == true)
+                {
+                    if (txtCourseCode.Text.Trim() != "")
+                        listCourses.Items.Add(txtCourseCode.Text + " " + txtCourseName + ", [i]passed[/i]");
+                    else
+                        listCourses.Items.Add(txtCourseName + ", [i]passed[/i]");
+                }
+                else
+                {
+                    if (txtCourseCode.Text.Trim() != "")
+                        listCourses.Items.Add(txtCourseCode.Text + " " + txtCourseName + ", [i]failed[/i]");
+                    else
+                        listCourses.Items.Add(txtCourseName + ", [i]failed[/i]");
+                }
+                UpdateProgressBar(6, true);
+            }
+            else
+                MessageBox.Show("Course name can't be empty!");
+        }
+
+        private void btnRemoveSelected_Click(object sender, EventArgs e)
+        {
+            if (listCourses.SelectedIndex != -1)
+                listCourses.Items.RemoveAt(listCourses.SelectedIndex);
+            if (listCourses.Items.Count == 0)
+                UpdateProgressBar(6, false);
+        }
+
+        private void btnRemoveAll_Click(object sender, EventArgs e)
+        {
+            while (listCourses.Items.Count != 0)
+                listCourses.Items.RemoveAt(0);
+            UpdateProgressBar(6, false);
         }
 
         private void comboGrade_SelectedIndexChanged(object sender, EventArgs e)

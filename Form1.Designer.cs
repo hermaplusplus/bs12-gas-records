@@ -416,6 +416,8 @@
             // checkPassed
             // 
             this.checkPassed.AutoSize = true;
+            this.checkPassed.Checked = true;
+            this.checkPassed.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkPassed.Location = new System.Drawing.Point(360, 132);
             this.checkPassed.Name = "checkPassed";
             this.checkPassed.Size = new System.Drawing.Size(77, 21);
@@ -442,15 +444,18 @@
             this.btnRemoveSelected.TabIndex = 7;
             this.btnRemoveSelected.Text = "Remove Selected";
             this.btnRemoveSelected.UseVisualStyleBackColor = true;
+            this.btnRemoveSelected.Click += new System.EventHandler(this.btnRemoveSelected_Click);
             // 
             // btnRemoveAll
             // 
+            this.btnRemoveAll.Enabled = false;
             this.btnRemoveAll.Location = new System.Drawing.Point(351, 161);
             this.btnRemoveAll.Name = "btnRemoveAll";
             this.btnRemoveAll.Size = new System.Drawing.Size(90, 23);
             this.btnRemoveAll.TabIndex = 8;
             this.btnRemoveAll.Text = "Remove All";
             this.btnRemoveAll.UseVisualStyleBackColor = true;
+            this.btnRemoveAll.Click += new System.EventHandler(this.btnRemoveAll_Click);
             // 
             // Form1
             // 

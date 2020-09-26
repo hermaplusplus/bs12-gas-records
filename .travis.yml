@@ -1,4 +1,4 @@
 language: csharp
-solution: Maze.sln
+solution: bs12-gas-records.sln
 mono:
   - latest

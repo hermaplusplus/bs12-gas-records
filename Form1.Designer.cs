@@ -43,7 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnTemplateUpdate = new System.Windows.Forms.Button();
             this.txtTemplatePath = new System.Windows.Forms.TextBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.barProgress = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.comboGrade = new System.Windows.Forms.ComboBox();
@@ -134,6 +134,7 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(7, 7);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(495, 513);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
@@ -142,6 +143,7 @@
             // 
             this.txtMedical.Location = new System.Drawing.Point(7, 7);
             this.txtMedical.Name = "txtMedical";
+            this.txtMedical.ReadOnly = true;
             this.txtMedical.Size = new System.Drawing.Size(495, 513);
             this.txtMedical.TabIndex = 1;
             this.txtMedical.Text = "";
@@ -150,6 +152,7 @@
             // 
             this.txtEmployment.Location = new System.Drawing.Point(7, 7);
             this.txtEmployment.Name = "txtEmployment";
+            this.txtEmployment.ReadOnly = true;
             this.txtEmployment.Size = new System.Drawing.Size(495, 513);
             this.txtEmployment.TabIndex = 1;
             this.txtEmployment.Text = "";
@@ -158,6 +161,7 @@
             // 
             this.txtSecurity.Location = new System.Drawing.Point(7, 7);
             this.txtSecurity.Name = "txtSecurity";
+            this.txtSecurity.ReadOnly = true;
             this.txtSecurity.Size = new System.Drawing.Size(495, 513);
             this.txtSecurity.TabIndex = 1;
             this.txtSecurity.Text = "";
@@ -206,16 +210,16 @@
             this.txtTemplatePath.Name = "txtTemplatePath";
             this.txtTemplatePath.Size = new System.Drawing.Size(230, 23);
             this.txtTemplatePath.TabIndex = 5;
-            this.txtTemplatePath.Text = "templates/default.zip";
+            this.txtTemplatePath.Text = "templates/default/";
             // 
-            // progressBar1
+            // barProgress
             // 
-            this.progressBar1.Location = new System.Drawing.Point(13, 492);
-            this.progressBar1.Maximum = 7;
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(276, 23);
-            this.progressBar1.Step = 1;
-            this.progressBar1.TabIndex = 6;
+            this.barProgress.Location = new System.Drawing.Point(13, 492);
+            this.barProgress.Maximum = 70;
+            this.barProgress.Name = "barProgress";
+            this.barProgress.Size = new System.Drawing.Size(276, 23);
+            this.barProgress.Step = 1;
+            this.barProgress.TabIndex = 6;
             // 
             // button1
             // 
@@ -252,6 +256,7 @@
             this.comboGrade.Name = "comboGrade";
             this.comboGrade.Size = new System.Drawing.Size(121, 24);
             this.comboGrade.TabIndex = 0;
+            this.comboGrade.SelectedIndexChanged += new System.EventHandler(this.comboGrade_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -286,6 +291,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(193, 22);
             this.txtName.TabIndex = 12;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // comboSex
             // 
@@ -298,6 +304,7 @@
             this.comboSex.Name = "comboSex";
             this.comboSex.Size = new System.Drawing.Size(121, 24);
             this.comboSex.TabIndex = 13;
+            this.comboSex.SelectedIndexChanged += new System.EventHandler(this.comboSex_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -315,6 +322,7 @@
             this.txtHeight.Size = new System.Drawing.Size(119, 22);
             this.txtHeight.TabIndex = 15;
             this.txtHeight.Text = " ";
+            this.txtHeight.TextChanged += new System.EventHandler(this.txtHeight_TextChanged);
             // 
             // label7
             // 
@@ -340,6 +348,7 @@
             this.txtTrainingCentre.Name = "txtTrainingCentre";
             this.txtTrainingCentre.Size = new System.Drawing.Size(193, 22);
             this.txtTrainingCentre.TabIndex = 18;
+            this.txtTrainingCentre.TextChanged += new System.EventHandler(this.txtTrainingCentre_TextChanged);
             // 
             // label9
             // 
@@ -411,6 +420,8 @@
             // checkPassed
             // 
             this.checkPassed.AutoSize = true;
+            this.checkPassed.Checked = true;
+            this.checkPassed.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkPassed.Location = new System.Drawing.Point(360, 132);
             this.checkPassed.Name = "checkPassed";
             this.checkPassed.Size = new System.Drawing.Size(77, 21);
@@ -426,6 +437,7 @@
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemoveSelected
             // 
@@ -436,15 +448,18 @@
             this.btnRemoveSelected.TabIndex = 7;
             this.btnRemoveSelected.Text = "Remove Selected";
             this.btnRemoveSelected.UseVisualStyleBackColor = true;
+            this.btnRemoveSelected.Click += new System.EventHandler(this.btnRemoveSelected_Click);
             // 
             // btnRemoveAll
             // 
+            this.btnRemoveAll.Enabled = false;
             this.btnRemoveAll.Location = new System.Drawing.Point(351, 161);
             this.btnRemoveAll.Name = "btnRemoveAll";
             this.btnRemoveAll.Size = new System.Drawing.Size(90, 23);
             this.btnRemoveAll.TabIndex = 8;
             this.btnRemoveAll.Text = "Remove All";
             this.btnRemoveAll.UseVisualStyleBackColor = true;
+            this.btnRemoveAll.Click += new System.EventHandler(this.btnRemoveAll_Click);
             // 
             // Form1
             // 
@@ -466,13 +481,13 @@
             this.Controls.Add(this.comboGrade);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.barProgress);
             this.Controls.Add(this.txtTemplatePath);
             this.Controls.Add(this.btnTemplateUpdate);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCode);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabOutputs);
+            this.Controls.Add(this.label2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Giant Armoured Serpentid Record Utility";
@@ -505,7 +520,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnTemplateUpdate;
         private System.Windows.Forms.TextBox txtTemplatePath;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar barProgress;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboGrade;

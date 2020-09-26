@@ -119,7 +119,7 @@
   </resheader>
   <data name="label2.Text" xml:space="preserve">
     <value>Complete the following fields and records will be generated on the right.
-To use your own templates, copy the default template, unzip, modify,
-re-zip, and change the path at the bottom of this window.</value>
+To use your own templates, copy the default template, modify it, and
+change the path at the bottom of this window to point to the folder.</value>
   </data>
 </root>

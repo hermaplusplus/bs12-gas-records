@@ -1,0 +1,5 @@
+﻿A positive temperament grade means the GAS can confidently and safely interact with humans. It will verbally communicate when uncomfortable and will request for persons too close to move away. When posed with danger, they will always opt to escape and/or hide, and aggression would be used only as a last resort and without excessive force.
+//SPLIT//
+A neutral temperament grade means that a GAS may be skittish or somewhat oppositional towards humans. It will attempt to verbally communicate when uncomfortable, but may show aggression after repeated attempts of verbal communiccation. When posed with danger, aggression is a secondary option to escape and/or hiding.
+//SPLIT//
+A negative temperament grade means that a GAS will often show aggression towards humans. It may show aggression rather than communicate verbally when uncomfortable. When posed with danger, physical attacks may begin after a single warning.

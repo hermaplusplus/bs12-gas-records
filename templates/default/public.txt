@@ -1,0 +1,16 @@
+﻿[center][h1]Xynergy GAS Subject General Record[/h1][/center]
+
+[b]Name:[/b] //NAME//
+[b]Sex:[/b] //SEX//
+[b]Age:[/b] //AGE//
+[b]Regular Height:[/b] //HEIGHT//
+[b]Coloration:[/b] //COLOURATION//
+
+[b]Training Centre:[/b] //CENTRE//
+[b]Assigned Grade:[/b] //GRADE//
+[b]Training Courses Conducted:[/b]
+[list]
+//LIST//
+[/list]
+
+[b]General Notes:[/b] //NOTES//

@@ -6,6 +6,6 @@
 [b]Regular Height:[/b] //HEIGHT//
 [b]Coloration:[/b] //COLOURATION//
 
-[b]Temperament Grade:[/b] Positive
+[b]Temperament Grade:[/b] //MODIFIER//
 [b]Temperament Grade Meaning:[/b]
 //TEMPERAMENT//

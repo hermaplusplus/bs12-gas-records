@@ -10,7 +10,7 @@ This project is a tool for streamlining the creation of Giant Armoured Serpendid
 If the program crashes for whatever reason, feel free to make a PR with a fix or just create an issue.
 
 ### To-Do
-* [ ] Make a working interface
-* [ ] Include support for custom templates
+* [X] Make a working interface
+* [X] Include support for custom templates
 * [ ] Simulate colour selection for GAS
-* [ ] Chomp stray bugs
+* [ ] Chomp stray bugs (never gonna happen)

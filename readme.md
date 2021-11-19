@@ -7,6 +7,11 @@
 
 This project is a tool for streamlining the creation of Giant Armoured Serpendid characters in [Baystation12](https://github.com/Baystation12/Baystation12).
 
+### Preview
+
+![lLAIp15](https://user-images.githubusercontent.com/49307226/142520650-acb9022a-fa0a-4efe-8bda-2401502a3175.png)
+
+
 ### Contribution
 
 If the program crashes for whatever reason, feel free to make a PR with a fix or just create an issue.
